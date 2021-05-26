@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          margin: 2em;
+        }
+  
+        video {
+          max-width: 100%;
+        }
+        
+        #container {
+          max-width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+</head>
+<body>
+    <div id="container" role="main">
+        <video controls>
+          <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4" type="video/mp4"/>
+          <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en" default="true"/>
+          <track src="subtitles-zh.vtt" label="中文字幕" kind="captions" srclang="en"/>
+          <p>This browser does not support the video element.</p>
+        </video>
+        Subtitle can be changed in the &lt;video&gt; controls
+      </div>
+    </body>
+</body>
+</html>
